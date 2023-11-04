@@ -1,0 +1,89 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body{
+  background-image: url("../img/starry-background.gif");
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header, .section{
+  margin: 1em;
+  min-width: 45%;
+  max-width: 45%;
+  background-color: black;
+  border: 3px solid silver;
+  box-shadow: 5px 5px 5px grey;
+  color: aquamarine;
+}
+
+header{
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20pt;
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+}
+  .controls * {
+    margin: 0 1em;
+  }
+
+.text{
+  padding: .5em;
+  font-family: 'Goldman', sans-serif;
+  font-size: 16pt;
+}
+
+img{
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: cover;
+  margin: 0 auto;
+
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 800px){
+  .container{
+    flex-flow: column nowrap;
+  }
+
+  .section{
+    max-width: 85%;
+  }
+  
+}
+
+.hidden{
+  display: none;
+}
+
