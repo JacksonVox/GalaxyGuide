@@ -1,7 +1,7 @@
 //NASA API
 function getNasa(isRandom) {
   if (isRandom){ dateInput.value = picRandom()}
-  fetch(`https://api.nasa.gov/planetary/apod?api_key=GK1aOBP0XxOjo0y3VoMxWtl8WflIVyL199l2KTSF&date=${dateInput.value}`)
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${process.env.NASA_API_KEY}&date=${dateInput.value}`)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       document.querySelector('h2').innerText = data.title
