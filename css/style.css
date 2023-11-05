@@ -25,9 +25,6 @@ header, .section{
   margin: 1em;
   min-width: 45%;
   max-width: 45%;
-  background-color: black;
-  border: 3px solid silver;
-  box-shadow: 5px 5px 5px grey;
   color: aquamarine;
 }
 

@@ -61,9 +61,9 @@ let nextDayButton = document.querySelector('#next-day')
 let getButton = document.querySelector('button[name="get"]')
 let randomButton = document.querySelector('button[name="random"]')
 
+dateInput.addEventListener('change', getNasa);
 prevDayButton.addEventListener('click', changeDay(-1, dateInput))
 nextDayButton.addEventListener('click', changeDay(1, dateInput))
-getButton.addEventListener('click', getNasa)
 randomButton.addEventListener('click', function() { getNasa('isRandom') })
 
 
